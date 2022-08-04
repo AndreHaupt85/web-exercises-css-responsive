@@ -16,3 +16,25 @@
     --accent-2: #50fa7b;
 }
   
+@media (prefers-color-scheme: light) {
+    :root {
+        --dark: #acacac;
+        --medium: #b3b3ae;
+        --light: #f8f8f2;
+        --contrast-text: #282a36;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .main-area{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        }
+    }
+@media screen and (min-width: 1000px) {
+    .main-area {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
